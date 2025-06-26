@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Gupta | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">LOVE GUPTA</div>
+        <button id="drawer-toggle" aria-label="Open navigation" style="display:none;">
+            &#9776;
+        </button>
+        <nav id="menu">
+            <a href="#Home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div id="drawer" class="drawer">
+            <button id="drawer-close" aria-label="Close navigation">&times;</button>
+            <a href="#Home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Achievements</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <section id="Home" class="section">
+        <div class="home-wrapper">
+            <!-- Left Side: Text Content -->
+            <div id="container">
+                <h1 class="fade-in">Hi I'm Love Gupta</h1>
+                <p class="fade-in delay-1">A passionate Web Developer with theoretical and hands-on knowledge of Java,
+                    HTML,
+                    CSS, JavaScript and Bootstrap.</p>
+                <div id="icon" class="fade-in delay-2">
+                    <a href="mailto:guptalove997@gmail.com" target="_blank"><img
+                            src="https://img.icons8.com/fluency/48/gmail-new.png" alt="Email" /></a>
+                    <a href="https://www.linkedin.com/in/love-gupta-b42094317/" target="_blank"><img
+                            src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://github.com/lovegupta123" target="_blank"><img
+                            src="https://img.icons8.com/nolan/64/github.png" alt="GitHub" /></a>
+
+                </div>
+                <div id="btnbox" class="fade-in delay-3">
+                    <button onclick="showContactPopup()">CONTACT ME</button>
+                    <button onclick="window.open('resumejune.pdf', '_blank')">SEE MY RESUME</button>
+                </div>
+
+                <!-- Contact Popup -->
+                <div id="contactPopup" class="popup">
+                    <div class="popup-content">
+                        <span class="close-btn" onclick="closeContactPopup()">&times;</span>
+                        <h3>Contact Information</h3>
+                        <p><strong>Phone:</strong> +917453008917</p>
+                        <p><strong>Email:</strong> guptalove997@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Side: Image -->
+            <div class="home-image fade-in delay-4">
+                <img src="love2.png" alt="Home Right Image">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="about" class="section">
+        <h2 class="section-title fade-in delay-1">About Me</h2>
+        <div class="about-container fade-in delay-2">
+            <div class="about-image">
+                <img src="love2.png" alt="Love Gupta Profile Photo">
+            </div>
+            <div class="about-text">
+                <p>
+                    Hi, I'm <strong>Love Gupta</strong>, a passionate  Web developer with a strong
+                    foundation in frontend and backend technologies.
+                    I enjoy building modern, responsive web applications and continuously learning new tools to enhance
+                    the user experience.
+                </p>
+                <p>
+                    I have hands-on experience in Html , CSS , JavaScript , Java, Spring Boot, and more. I've worked on
+                    several real-world projects including CRM systems and visitor management platforms.
+                    I'm always eager to explore new technologies and contribute to impactful software solutions. My goal
+                    is to build efficient, scalable, and maintainable systems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <section id="skill" class="section">
+        <h2 class="section-title fade-in delay-1">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v2.png"
+                        alt="Java"></div>
+                <div class="skill-info">
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="bar-fill" data-percent="90"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="https://img.icons8.com/color/48/000000/spring-logo.png"
+                        alt="Spring Boot"></div>
+                <div class="skill-info">
+                    <h3>Spring Boot</h3>
+                    <div class="skill-bar">
+                        <div class="bar-fill" data-percent="85"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML5">
+                </div>
+                <div class="skill-info">
+                    <h3>HTML </h3>
+                    <div class="skill-bar">
+                        <div class="bar-fill" data-percent="75"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS"></div>
+                <div class="skill-info">
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="bar-fill" data-percent="80"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="https://img.icons8.com/color/48/000000/javascript--v1.png"
+                        alt="JavaScript"></div>
+                <div class="skill-info">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="bar-fill" data-percent="70"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><img src="https://img.icons8.com/ios-filled/50/000000/github" alt="Git"></div>
+                <div class="skill-info">
+                    <h3>GitHub</h3>
+                    <div class="skill-bar">
+                        <div class="bar-fill" data-percent="65"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>Customer Relationship Management (CRM) System</h3>
+                <p class="tech-used">Technologies Used: <span>HTML, CSS, JavaScript | Spring Boot | MySQL</span></p>
+                <p class="description">
+                    • Designed and developed a responsive frontend interface to manage customer data, leads, and
+                    interactions.
+                    Integrated dynamic UI components for smooth user experience and enabled role-based access for admin
+                    and users.
+                </p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3>Digital Visitor Management System</h3>
+                <p class="tech-used">Technologies Used: <span>HTML, CSS, JavaScript | Spring Boot | MySQL</span></p>
+                <p class="description">
+                    • Created a web-based visitor registration and tracking system with OTP authentication, real-time
+                    logging, and an admin dashboard.
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="certificates" class="section">
+        <h2 class="section-title">Certificates & Achievements</h2>
+        <div class="certificates-grid">
+            <div class="certificate-card">
+                <h3>Web Development Internship Certification</h3>
+                <p>CodSoft</p>
+            </div>
+            <div class="certificate-card">
+                <h3>AWS Cloud Computing Workshop Certification</h3>
+                <p>Sigma–Spartakas Learning Solutions</p>
+            </div>
+            <div class="certificate-card">
+                <h3>Volunteer at Marathon At RBCET (2024/25)</h3>
+            </div>
+            <div class="certificate-card">
+                <h3>Volunteer at STEM Carnival At RBCET (2024)</h3>
+            </div>
+            <div class="certificate-card">
+                <h3>Building Android Apps with AWS – LinkedInLearning</h3>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><strong>Name:</strong> Love Gupta</p>
+                <p><strong>Email:</strong> <a href="mailto:guptalove997@gmail.com">guptalove997@gmail.com</a></p>
+                <p><strong>Phone:</strong> +91-7453008917</p>
+            </div>
+
+            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-vertical">
+        <div class="footer-columns">
+            <!-- logo footer -->
+            <div class="footer-column">
+                <div id="logo33">LOVE GUPTA</div>
+                <p> A passionate Web Developer with theoretical and hands-on knowledge of Java,
+                    HTML,
+                    CSS, JavaScript and Bootstrap</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <nav class="footer-nav-vertical">
+                    <a href="#Home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skill">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-column">
+                <h3>Connect Me</h3>
+                <div class="footer-social-vertical">
+                    <a href="mailto:guptalove997@gmail.com" target="_blank" target="_blank">
+                        📧guptalove997@gmail.com </a>
+                    <a href="https://www.linkedin.com/in/love-gupta-b42094317/" target="_blank">🔗 LinkedIn</a>
+                    <a href="https://github.com/lovegupta123" target="_blank">💻 GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    </footer>
+    <script>
+        window.addEventListener("scroll", () => {
+            const skillsSection = document.querySelector("#skill");
+            const progressBars = document.querySelectorAll(".bar-fill");
+            const cards = document.querySelectorAll(".skill-card");
+            const illustration = document.querySelector(".skill-illustration");
+
+            const sectionTop = skillsSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+
+            if (sectionTop < screenPosition) {
+                // Trigger skill bar fill animation
+                progressBars.forEach((bar) => {
+                    const width = bar.getAttribute("style").match(/\d+/)[0] + "%";
+                    bar.style.width = width;
+                });
+
+                // Trigger fade-in animations
+                cards.forEach(card => card.style.animationPlayState = "running");
+                if (illustration) illustration.style.animationPlayState = "running";
+            }
+        });
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.progress').forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0%';
+                setTimeout(() => bar.style.width = width, 300);
+            });
+        });
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Skill bar fill animation on scroll
+        const skillBars = document.querySelectorAll('.bar-fill');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5 // Trigger when 50% of the element is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const barFill = entry.target;
+                    const percent = barFill.dataset.percent;
+                    barFill.style.width = percent + '%';
+                    observer.unobserve(barFill); // Stop observing once animated
+                }
+            });
+        }, observerOptions);
+
+        skillBars.forEach(bar => {
+            observer.observe(bar);
+        });
+
+
+
+
+        function showContactPopup() {
+            document.getElementById("contactPopup").style.display = "block";
+        }
+
+        function closeContactPopup() {
+            document.getElementById("contactPopup").style.display = "none";
+        }
+
+        // Optional: Close popup when clicking outside content
+        window.onclick = function (event) {
+            const popup = document.getElementById("contactPopup");
+            if (event.target === popup) {
+                popup.style.display = "none";
+            }
+        }
+
+        // Drawer toggle for mobile
+        const drawerToggle = document.getElementById('drawer-toggle');
+        const drawer = document.getElementById('drawer');
+        const drawerClose = document.getElementById('drawer-close');
+
+        function openDrawer() {
+            drawer.classList.add('open');
+        }
+        function closeDrawer() {
+            drawer.classList.remove('open');
+        }
+        if (drawerToggle && drawer && drawerClose) {
+            drawerToggle.addEventListener('click', openDrawer);
+            drawerClose.addEventListener('click', closeDrawer);
+            // Close drawer on nav link click
+            drawer.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', closeDrawer);
+            });
+        }
+    </script>
+</body>
+
+</html>
